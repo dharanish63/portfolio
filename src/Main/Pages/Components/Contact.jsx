@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Box,
   Container,
@@ -42,7 +42,7 @@ const ContactCard = styled(Card)(({ theme }) => ({
 
 const ContactSection = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  // const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -69,26 +69,26 @@ const ContactSection = () => {
     setTimeout(() => setSubmitStatus(null), 5000);
   };
 
-  const contactInfo = [
-    {
-      icon: <EmailIcon sx={{ fontSize: 30 }} />,
-      title: "Email",
-      value: "ram.maheshwari@example.com",
-      link: "mailto:ram.maheshwari@example.com",
-    },
-    {
-      icon: <PhoneIcon sx={{ fontSize: 30 }} />,
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
-    },
-    {
-      icon: <LocationOnIcon sx={{ fontSize: 30 }} />,
-      title: "Location",
-      value: "Mumbai, India",
-      link: "#",
-    },
-  ];
+  // const contactInfo = [
+  //   {
+  //     icon: <EmailIcon sx={{ fontSize: 30 }} />,
+  //     title: "Email",
+  //     value: "ram.maheshwari@example.com",
+  //     link: "mailto:ram.maheshwari@example.com",
+  //   },
+  //   {
+  //     icon: <PhoneIcon sx={{ fontSize: 30 }} />,
+  //     title: "Phone",
+  //     value: "+1 (555) 123-4567",
+  //     link: "tel:+15551234567",
+  //   },
+  //   {
+  //     icon: <LocationOnIcon sx={{ fontSize: 30 }} />,
+  //     title: "Location",
+  //     value: "Mumbai, India",
+  //     link: "#",
+  //   },
+  // ];
 
   const socialLinks = [
     {

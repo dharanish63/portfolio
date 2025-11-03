@@ -3,9 +3,7 @@ import {
   Box,
   Container,
   Typography,
-  Grid,
   Card,
-  CardContent,
   Avatar,
   useTheme,
   useMediaQuery,
@@ -36,7 +34,7 @@ const ServiceCard = styled(Card)(({ theme }) => ({
 
 const AboutSection = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  // const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const services = [
     {

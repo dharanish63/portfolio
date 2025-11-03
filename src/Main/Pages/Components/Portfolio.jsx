@@ -8,7 +8,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+// import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 const HeroSectionBox = styled(Box)(({ theme }) => ({
   background: "#bfbcbc",
